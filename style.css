@@ -9,20 +9,28 @@
    align-items: center;
    position: fixed;
     z-index: 3;
+   justify-content: center;
+   height: 100vh;
+   overflow: hidden;
 }
+
+#audio {
+  z-index: 3;
+}
+
 #card h2 {
    font-size:3em;
    margin:0;
    color:pink;
    text-align: center;
 }
+
 #card p {
    font-size: 1.5em;
    text-align: justify;
    padding-left: 30px; /* Espacio en blanco a la izquierda */
    padding-right: 30px; /* Espacio en blanco a la derecha */
 }
-
 
 .side {
    background:#eee;
@@ -31,22 +39,25 @@
 /*    border:1px solid red; */
    padding:10px;
 }
+
 .side.one {
    width:320px;
    transform:skew(10deg,20deg);
    background:linear-gradient(90deg, #fff, #fff 40%, #ddd);
 }
+
 .side.two {
    transform:skew(10deg,-15deg);
    background:linear-gradient(-90deg, #fff, #fff 40%, #f0f0f0);
 }
 
  body {
-    display: flex;
+  display: flex;
     align-items: flex-end;
     justify-content: center;
     min-height: 100vh;
     background-color: var(--dark-color);
+    font-family: 'Sacramento', cursive;
     overflow: hidden;
     perspective: 1000px;
     
